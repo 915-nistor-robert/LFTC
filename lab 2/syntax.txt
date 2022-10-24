@@ -1,0 +1,25 @@
+## Syntax
+
+- The words - predefined words are written with uppercase letters
+- Sintactical Rules
+    - <variable> ::= VAR <identifier>
+    - <multiple-variables> ::= <variable> | <multiple-variables> ; <variable>
+    - <type-declaration> ::= <variable> : <type>
+    - <type> ::= CHAR | INTEGER | STRING
+    - <array> ::= ARRAY <identifier>
+    - <array-declaration> ::= <array> : <type>
+    - <compound-stmt> ::= BEGIN <multiple-stmt> END
+    - <multiple-stms> ::= <stmt> | <multiple-stmt> ; <stmt>
+    - <stmt> ::= <simple-stmt> | <struct-stmt>
+    - <simple-stmt> ::= <assign-stmt> | <io-stmt>
+    - <assign-stmt> ::= <variable> = <expression>
+    - <io-stmt> ::= READ <identifier> | WRITE <identifier>
+    - <expression> ::= <identifier> <operator> <identifier> | <identifier>
+    - <complex-expression> ::= <expression> <operator> <identifier> | <expression>
+    - <operator> ::= + | - | * | /
+    - <struct-stmt> ::= <if-stmt> | <while-stmt>
+    - <if-stmt> ::= IF <condition> : <stmt> | IF <condition> : <stmt> ELSE <stmt>
+    - <while-stmt> WHILE <condition> DO <stmt>
+    - <condition> ::= <expression> RELATION <expression>
+    - <multiple-condition> ::= <multiple-condition> RELATION <expression> | <expression>
+    - RELATION ::= < | ≤ | = | ≥ | >

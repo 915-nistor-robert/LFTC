@@ -1,0 +1,32 @@
+Alphabet:
+
+- Upper (A-Z) and lower case letters (a-z) of the english alphabet;
+- Underline character ‘_’;
+- Decimal digits (0-9);
+
+## Lexic
+
+- operators +-*/:=< ≤  = ≥
+- separators [] {} ; : space
+- reserved words: var, if, else, in, every, const, break, null, write, read, while
+
+Identifier
+
+- a sequence of letters and digits, such that the first character is a letter
+    - <identifier> ::= <letter> | <seq-of-letters> | <seq-of-letters><number>
+    - <seq-of-letter> ::= <letter> | <seq-of-letters><letter>
+    - <letter> ::= a | b | … | z | A | … | Z
+    - <number> ::= <digit> | <number><digit>
+    - <digit> ::= 0 | 1 | 2 | … | 9
+
+Constants
+
+- integer
+    - <integer> ::= <sign><number>
+    - <sign> = + | -
+- char
+    - <char> ::= ‘<letter>’ | ‘<digit>’
+    - <character> = <letter> | <digit>
+- string
+    - <str> ::= <character> | <str><character>
+    - <string> = “<str>”
