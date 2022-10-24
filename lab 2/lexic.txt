@@ -16,8 +16,9 @@ Identifier
     - <identifier> ::= <letter> | <seq-of-letters> | <seq-of-letters><number>
     - <seq-of-letter> ::= <letter> | <seq-of-letters><letter>
     - <letter> ::= a | b | … | z | A | … | Z
-    - <number> ::= <digit> | <number><digit>
+    - <number> ::= <non-zero-digit> | <number><digit>
     - <digit> ::= 0 | 1 | 2 | … | 9
+    - <non-zero-digit> ::= 1 | 2 | ... | 9
 
 Constants
 
