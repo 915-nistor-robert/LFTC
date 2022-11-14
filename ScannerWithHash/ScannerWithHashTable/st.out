@@ -1,0 +1,6 @@
+Bucket          Values          
+1               ['end']         
+5               ['"a"']         
+6               ['"b"']         
+7               ['begin', 'a']  
+8               ['b']           

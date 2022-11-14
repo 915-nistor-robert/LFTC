@@ -1,3 +1,4 @@
+from domain.Scanner import Scanner
 from domain.SymbolTable import SymbolTable
 from domain.PIF import PIF
 
@@ -20,6 +21,10 @@ PIF.genPIF('abc')
 PIF.genPIF(12)
 print('PIF:')
 PIF.print()
+filePath = 'D:/GitHub/LFTC/Scanner/token.in'
+
+scanner = Scanner(filePath, PIF.reservedWords, PIF.operators, PIF.separators)
+scanner.scan()
 
 
 

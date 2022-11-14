@@ -1,15 +1,10 @@
-from domain.Operator import Operator
-from domain.ReservedWord import ReservedWord
-from domain.Separator import Separator
-
-
 class PIF:
     def __init__(self, symbolTable):
         self.__pifList = []
         self.symbolTable = symbolTable
         self.reservedWords = ['var', 'if', 'else', 'in', 'every', 'const', 'break', 'null', 'write', 'read', 'while']
         self.operators = ['+', '-', '*', '/', ':', '<', '<=', '=', '>=', '>']
-        self.separators = ['[',']','{','}',';',':',' ']
+        self.separators = ['[', ']', '{', '}', ';', ':', ' ']
 
     def genPIF(self, token):
         if self.checkReservedWord(token) or self.checkSeparator(token) or self.checkOperator(token):
@@ -17,7 +12,7 @@ class PIF:
         else:
             self.__pifList.append((token, self.symbolTable.get(token)))
 
-    def checkReservedWord(self,token):
+    def checkReservedWord(self, token):
         if token in self.reservedWords:
             return True
         return False
@@ -34,4 +29,4 @@ class PIF:
 
     def print(self):
         for pif in self.__pifList:
-            print(pif[0],"|",pif[1])
+            print(pif[0], "|", pif[1])

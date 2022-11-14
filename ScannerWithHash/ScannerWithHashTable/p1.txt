@@ -1,0 +1,15 @@
+begin
+{
+    var 0a
+    var b
+
+    read(a)
+    read(b)
+
+    if (a > b) {
+        write("a")
+    } else {
+        write("b")
+    }
+}
+end
