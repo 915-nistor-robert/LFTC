@@ -1,7 +1,7 @@
 begin
 {
-    var 0a
-    var b
+    var a
+    var 0b
 
     read(a)
     read(b)

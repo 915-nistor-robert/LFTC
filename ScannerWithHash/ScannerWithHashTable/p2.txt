@@ -1,0 +1,24 @@
+begin
+{
+    var nr
+    var o
+    var nrClone
+
+    o = 0
+
+    read(nr)
+
+    nrClone = nr
+
+    while (nr > 0){
+        o = o * 10 + nr % 10
+        nr = nr / 10
+    }
+
+    if(nrClone == o){
+        write("a")
+    } else {
+        write("b")
+    }
+}
+end

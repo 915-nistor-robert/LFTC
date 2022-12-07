@@ -1,6 +1,6 @@
 reservedWords = ['var', 'if', 'else', 'in', 'every', 'const', 'break', 'null', 'write', 'read', 'while']
 operators = ['+', '-', '*', '/', ':', '<', '<=', '==', '>=', '>','%', '&', '!', '!=',
-             '||']
+             '||','=']
 separators = ['[', ']', '{', '}', ';', ':', ' ','(',')','\n']
 allThree = separators + operators + reservedWords
 
